@@ -12,11 +12,11 @@ import {
 } from 'reactstrap';
 
 function App() {
-  const [domWriting, setDomWriting] = useState('Nothing Here!');
+  const [domWriting, setDomWriting] = useState('Add State Logic');
 
   const handleClick = (e) => {
     console.warn(`You clicked ${e.target.id}`);
-    setDomWriting(`You clicked ${e.target.id}! Check the Console!`);
+    setDomWriting(`You clicked ${e.target.id}! Now Write The Logic!`);
   };
 
   return (
@@ -30,9 +30,7 @@ function App() {
             <FormGroup>
               <Label for="exampleNumber"></Label>
               <Input type="number" name="number" id="exampleNumber" placeholder="ZipCode, City, etc"/>
-            <div>
-              <Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button>
-            </div>
+              <div><Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button></div>
             </FormGroup>
           </Form>
         </CardBody>
