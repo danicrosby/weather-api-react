@@ -26,9 +26,9 @@ function App() {
 
   return (
     <div className='App'>
-      <h2>React Weather API</h2>
+      <h1 style={{ marginTop: '1em', marginBottom: '1em' }}>React Weather API</h1>
 
-    <Container style={{ marginBottom: '10em' }}>
+    <Container style={{ marginBottom: '4em' }}>
       <Row>
         <Col xs="6" sm="4">
           <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
