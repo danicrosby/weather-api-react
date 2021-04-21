@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './App.scss';
 import {
+  Container,
+  Row,
+  Col,
   Card,
   CardBody,
+  CardImg,
+  CardSubtitle,
   CardTitle,
   Button,
   Form,
@@ -23,20 +28,63 @@ function App() {
     <div className='App'>
       <h2>React Weather API</h2>
 
-      <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
-        <CardBody>
-          <CardTitle tag="h5">Watch The Weather</CardTitle>
-          <Form>
-            <FormGroup>
-              <Label for="exampleNumber"></Label>
-              <Input type="number" name="number" id="exampleNumber" placeholder="ZipCode, City, etc"/>
-              <div><Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button></div>
-            </FormGroup>
-          </Form>
-        </CardBody>
-      </Card>
-      <h3>{domWriting}</h3>
-    </div>
+    <Container>
+      <Row>
+        <Col xs="6" sm="4">
+          <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+          <CardImg top width="100%" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-cloud-512.png" style={{ width: '8em' }} alt="Card image cap" />
+          <CardBody>
+            <CardTitle tag="h5">City Name</CardTitle>
+            <CardSubtitle tag="h6" className="mb-2">50 Degrees | Rain</CardSubtitle>
+          </CardBody>
+          </Card>
+        </Col>
+
+        <Col xs="6" sm="4">
+        <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+          <CardImg top width="100%" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-cloud-512.png" style={{ width: '8em' }} alt="Card image cap" />
+          <CardBody>
+            <CardTitle tag="h5">City Name</CardTitle>
+            <CardSubtitle tag="h6" className="mb-2">50 Degrees | Rain</CardSubtitle>
+          </CardBody>
+          </Card>
+        </Col>
+
+        <Col sm="4">
+        <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+          <CardImg top width="100%" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-cloud-512.png" style={{ width: '8em' }} alt="Card image cap" />
+          <CardBody>
+            <CardTitle tag="h5">City Name</CardTitle>
+            <CardSubtitle tag="h6" className="mb-2">50 Degrees | Rain</CardSubtitle>
+          </CardBody>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+
+    <Container>
+    <Row>
+        <Col sm="12" md={{ size: 6, offset: 3 }}>
+          <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+            <CardBody>
+              <CardTitle tag="h5">Watch The Weather</CardTitle>
+              <Form>
+                <FormGroup>
+                  <Label for="exampleNumber"></Label>
+                  <Input type="number" name="number" id="exampleNumber" placeholder="ZipCode, City, etc"/>
+                  <div>
+                    <Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button>
+                  </div>
+                </FormGroup>
+              </Form>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+
+        <h3>{domWriting}</h3>
+      </div>
   );
 }
 
