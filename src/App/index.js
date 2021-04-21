@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 import './App.scss';
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input
+} from 'reactstrap';
 
 function App() {
   const [domWriting, setDomWriting] = useState('Nothing Here!');
@@ -12,12 +22,21 @@ function App() {
   return (
     <div className='App'>
       <h2>React Weather API</h2>
-      <div>
-        <button id='this-button' className='btn btn-info' onClick={handleClick}>Button 1</button>
-      </div>
-      <div>
-        <button id='this-button' className='btn btn-secondary' onClick={handleClick}>Button 2</button>
-      </div>
+
+      <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+        <CardBody>
+          <CardTitle tag="h5">Watch The Weather</CardTitle>
+          <Form>
+            <FormGroup>
+              <Label for="exampleNumber"></Label>
+              <Input type="number" name="number" id="exampleNumber" placeholder="ZipCode, City, etc"/>
+            <div>
+              <Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button>
+            </div>
+            </FormGroup>
+          </Form>
+        </CardBody>
+      </Card>
       <h3>{domWriting}</h3>
     </div>
   );
