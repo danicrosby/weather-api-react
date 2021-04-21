@@ -11,24 +11,12 @@ function App() {
 
   return (
     <div className='App'>
-      <h2>INSIDE APP COMPONENT</h2>
+      <h2>React Weather API</h2>
       <div>
-        <button
-          id='this-button'
-          className='btn btn-info'
-          onClick={handleClick}
-        >
-          I am THIS button
-        </button>
+        <button id='this-button' className='btn btn-info' onClick={handleClick}>Button 1</button>
       </div>
       <div>
-        <button
-          id='that-button'
-          className='btn btn-primary mt-3'
-          onClick={handleClick}
-        >
-          I am THAT button
-        </button>
+        <button id='this-button' className='btn btn-secondary' onClick={handleClick}>Button 2</button>
       </div>
       <h3>{domWriting}</h3>
     </div>
