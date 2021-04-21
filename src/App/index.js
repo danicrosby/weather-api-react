@@ -28,7 +28,7 @@ function App() {
     <div className='App'>
       <h2>React Weather API</h2>
 
-    <Container>
+    <Container style={{ marginBottom: '10em' }}>
       <Row>
         <Col xs="6" sm="4">
           <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
@@ -65,15 +65,15 @@ function App() {
     <Container>
     <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
-          <Card body inverse style={{ backgroundColor: '#666', width: '18em' }}>
+          <Card body inverse style={{ backgroundColor: '#666', width: '30em' }}>
             <CardBody>
-              <CardTitle tag="h5">Watch The Weather</CardTitle>
+              <CardTitle tag="h3">Watch The Weather</CardTitle>
               <Form>
                 <FormGroup>
                   <Label for="exampleNumber"></Label>
                   <Input type="number" name="number" id="exampleNumber" placeholder="ZipCode, City, etc"/>
                   <div>
-                    <Button id='this-button' className='btn btn-success' onClick={handleClick}>Submit</Button>
+                    <Button id='this-button' className='btn btn-success' onClick={handleClick} style={{ marginTop: '2em' }}>Submit</Button>
                   </div>
                 </FormGroup>
               </Form>
