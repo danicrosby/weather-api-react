@@ -1,5 +1,7 @@
-# React Template
+# Weather API in React
 
-Use this template to get up and running quickly on projects. 
-- For setting up this template, [follow these instructions](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-4-react/chapters/react-setup.md).
-- [Steps to deploy](https://github.com/nss-nightclass-projects/REACT-Deployment-Netlify)
+#V1 UI
+
+<img width="1421" alt="Screen Shot 2021-04-23 at 5 06 14 PM" src="https://user-images.githubusercontent.com/68397076/115934247-3a77bb00-a456-11eb-9d0b-c31d2eee3c3e.png">
+
+
